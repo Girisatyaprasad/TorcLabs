@@ -24,24 +24,13 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-20">
+      <section className="min-h-screen flex flex-col items-center justify-center px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="text-center max-w-4xl"
         >
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.6 }}
-            className="mb-6"
-          >
-            <span className="inline-block px-3 py-1 border border-border rounded-full text-text-secondary text-xs uppercase tracking-widest">
-              Creative R&D Studio
-            </span>
-          </motion.div>
-
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-8">
             We are a specialized{' '}
             <span className="relative inline-block">
@@ -68,18 +57,8 @@ function App() {
             className="inline-flex items-center gap-3 px-8 py-4 bg-deep-red hover:bg-deep-red-hover text-white font-medium rounded transition-all duration-200 hover:scale-105"
           >
             View Our Work
-            <ArrowDown size={18} className="animate-bounce" />
+            <ArrowDown size={18} />
           </motion.a>
-        </motion.div>
-
-        {/* Scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 2, duration: 0.6 }}
-          className="absolute bottom-10"
-        >
-          <div className="w-[1px] h-16 bg-gradient-to-b from-transparent to-text-muted" />
         </motion.div>
       </section>
 
@@ -93,9 +72,6 @@ function App() {
             transition={{ duration: 0.6 }}
             className="mb-20"
           >
-            <span className="text-deep-red text-sm font-medium uppercase tracking-widest mb-4 block">
-              Case Study
-            </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
               Creative in Action: <span className="text-text-secondary">ProBodyline</span>
             </h2>
@@ -111,17 +87,6 @@ function App() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="group border border-border rounded-lg overflow-hidden hover:border-deep-red/50 transition-colors duration-300"
             >
-              {/* Placeholder Image */}
-              <div className="aspect-[16/10] bg-charcoal-light border-b border-border flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-charcoal-light to-charcoal" />
-                <div className="relative z-10 text-center">
-                  <div className="w-16 h-16 mx-auto mb-3 border border-border rounded-lg flex items-center justify-center">
-                    <span className="text-text-muted text-2xl font-bold">01</span>
-                  </div>
-                  <p className="text-text-muted text-xs uppercase tracking-widest">Ad Mockup</p>
-                </div>
-              </div>
-
               <div className="p-8">
                 <h3 className="text-xl font-semibold mb-6 group-hover:text-deep-red-hover transition-colors">
                   Concept 01: The Industrial Standard
@@ -151,17 +116,6 @@ function App() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="group border border-border rounded-lg overflow-hidden hover:border-deep-red/50 transition-colors duration-300"
             >
-              {/* Placeholder Image */}
-              <div className="aspect-[16/10] bg-charcoal-light border-b border-border flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-charcoal-light to-charcoal" />
-                <div className="relative z-10 text-center">
-                  <div className="w-16 h-16 mx-auto mb-3 border border-border rounded-lg flex items-center justify-center">
-                    <span className="text-text-muted text-2xl font-bold">02</span>
-                  </div>
-                  <p className="text-text-muted text-xs uppercase tracking-widest">Ad Mockup</p>
-                </div>
-              </div>
-
               <div className="p-8">
                 <h3 className="text-xl font-semibold mb-6 group-hover:text-deep-red-hover transition-colors">
                   Concept 02: Member Retention Through Ergonomics
@@ -196,16 +150,12 @@ function App() {
             transition={{ duration: 0.6 }}
             className="mb-20 text-center"
           >
-            <span className="text-deep-red text-sm font-medium uppercase tracking-widest mb-4 block">
-              Our Process
-            </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
               The Torc Labs Model
             </h2>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Column 1 */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -222,7 +172,6 @@ function App() {
               </p>
             </motion.div>
 
-            {/* Column 2 */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -239,7 +188,6 @@ function App() {
               </p>
             </motion.div>
 
-            {/* Column 3 */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -259,7 +207,7 @@ function App() {
         </div>
       </section>
 
-      {/* CTA / Footer Section */}
+      {/* CTA Section */}
       <section id="contact" className="py-32 px-6 border-t border-border">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div
@@ -288,16 +236,8 @@ function App() {
 
       {/* Footer */}
       <footer className="border-t border-border py-8 px-6">
-        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <div className="w-6 h-6 bg-deep-red rounded-sm flex items-center justify-center">
-              <span className="text-white font-bold text-[10px]">T</span>
-            </div>
-            <span className="text-text-muted text-sm">© 2024 Torc Creative Labs.</span>
-          </div>
-          <p className="text-text-muted text-xs">
-            Specialized Creative R&D for premium brands.
-          </p>
+        <div className="max-w-6xl mx-auto text-center">
+          <span className="text-text-muted text-sm">© 2024 Torc Creative Labs.</span>
         </div>
       </footer>
     </div>
