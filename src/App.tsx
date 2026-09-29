@@ -3,15 +3,15 @@ import { ArrowDown, ArrowRight, Zap, Beaker, TrendingDown } from 'lucide-react';
 
 function App() {
   return (
-    <div className="min-h-screen bg-charcoal font-sans text-text-primary">
+    <div className="min-h-screen bg-apple-white font-sans text-text-primary">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-charcoal/80 backdrop-blur-md border-b border-border">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-apple-white/80 backdrop-blur-md border-b border-border">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-deep-red rounded-sm flex items-center justify-center">
               <span className="text-white font-bold text-sm">T</span>
             </div>
-            <span className="font-semibold text-sm tracking-wide uppercase">Torc Creative Labs</span>
+            <span className="font-semibold text-sm tracking-wide uppercase text-deep-red">Torc Creative Labs</span>
           </div>
           <a
             href="#contact"
@@ -31,7 +31,7 @@ function App() {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="text-center max-w-4xl"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-8">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-8 text-deep-red">
             We are a specialized{' '}
             <span className="relative inline-block">
               Creative R&D Lab
@@ -72,8 +72,8 @@ function App() {
             transition={{ duration: 0.6 }}
             className="mb-20"
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
-              Creative in Action: <span className="text-text-secondary">ProBodyline</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-deep-red">
+              Creative in Action: <span className="text-text-primary">ProBodyline</span>
             </h2>
           </motion.div>
 
@@ -85,10 +85,10 @@ function App() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="group border border-border rounded-lg overflow-hidden hover:border-deep-red/50 transition-colors duration-300"
+              className="group border border-border rounded-lg overflow-hidden hover:border-deep-red transition-colors duration-300"
             >
               <div className="p-8">
-                <h3 className="text-xl font-semibold mb-6 group-hover:text-deep-red-hover transition-colors">
+                <h3 className="text-xl font-semibold mb-6 text-deep-red group-hover:text-deep-red-hover transition-colors">
                   Concept 01: The Industrial Standard
                 </h3>
                 <ul className="space-y-4">
@@ -114,10 +114,10 @@ function App() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="group border border-border rounded-lg overflow-hidden hover:border-deep-red/50 transition-colors duration-300"
+              className="group border border-border rounded-lg overflow-hidden hover:border-deep-red transition-colors duration-300"
             >
               <div className="p-8">
-                <h3 className="text-xl font-semibold mb-6 group-hover:text-deep-red-hover transition-colors">
+                <h3 className="text-xl font-semibold mb-6 text-deep-red group-hover:text-deep-red-hover transition-colors">
                   Concept 02: Member Retention Through Ergonomics
                 </h3>
                 <ul className="space-y-4">
@@ -150,7 +150,7 @@ function App() {
             transition={{ duration: 0.6 }}
             className="mb-20 text-center"
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-deep-red">
               The Torc Labs Model
             </h2>
           </motion.div>
@@ -161,12 +161,12 @@ function App() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-center p-8 border border-border rounded-lg hover:border-deep-red/30 transition-colors duration-300"
+              className="text-center p-8 border border-border rounded-lg hover:border-deep-red transition-colors duration-300"
             >
-              <div className="w-14 h-14 mx-auto mb-6 border border-border rounded-lg flex items-center justify-center">
-                <Zap size={24} className="text-text-muted" />
+              <div className="w-14 h-14 mx-auto mb-6 border border-deep-red rounded-lg flex items-center justify-center">
+                <Zap size={24} className="text-deep-red" />
               </div>
-              <h3 className="text-lg font-semibold mb-4">No Media Buying</h3>
+              <h3 className="text-lg font-semibold mb-4 text-deep-red">No Media Buying</h3>
               <p className="text-text-secondary text-sm leading-relaxed">
                 We do not manage your ad spend or post on your feed.
               </p>
@@ -177,12 +177,12 @@ function App() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-center p-8 border border-border rounded-lg hover:border-deep-red/30 transition-colors duration-300"
+              className="text-center p-8 border border-border rounded-lg hover:border-deep-red transition-colors duration-300"
             >
-              <div className="w-14 h-14 mx-auto mb-6 border border-border rounded-lg flex items-center justify-center">
-                <Beaker size={24} className="text-text-muted" />
+              <div className="w-14 h-14 mx-auto mb-6 border border-deep-red rounded-lg flex items-center justify-center">
+                <Beaker size={24} className="text-deep-red" />
               </div>
-              <h3 className="text-lg font-semibold mb-4">Creative R&D</h3>
+              <h3 className="text-lg font-semibold mb-4 text-deep-red">Creative R&D</h3>
               <p className="text-text-secondary text-sm leading-relaxed">
                 We build high-converting creative hypotheses and hand them to your media team.
               </p>
@@ -193,12 +193,12 @@ function App() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-center p-8 border border-border rounded-lg hover:border-deep-red/30 transition-colors duration-300"
+              className="text-center p-8 border border-border rounded-lg hover:border-deep-red transition-colors duration-300"
             >
-              <div className="w-14 h-14 mx-auto mb-6 border border-border rounded-lg flex items-center justify-center">
-                <TrendingDown size={24} className="text-text-muted" />
+              <div className="w-14 h-14 mx-auto mb-6 border border-deep-red rounded-lg flex items-center justify-center">
+                <TrendingDown size={24} className="text-deep-red" />
               </div>
-              <h3 className="text-lg font-semibold mb-4">Lower CPA</h3>
+              <h3 className="text-lg font-semibold mb-4 text-deep-red">Lower CPA</h3>
               <p className="text-text-secondary text-sm leading-relaxed">
                 Our goal is to provide assets that stop the scroll and communicate premium value instantly.
               </p>
@@ -216,7 +216,7 @@ function App() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-6 text-deep-red">
               Ready to upgrade your creative?
             </h2>
             <p className="text-text-secondary text-lg mb-12 max-w-xl mx-auto">
@@ -237,7 +237,7 @@ function App() {
       {/* Footer */}
       <footer className="border-t border-border py-8 px-6">
         <div className="max-w-6xl mx-auto text-center">
-          <span className="text-text-muted text-sm">© 2024 Torc Creative Labs.</span>
+          <span className="text-text-secondary text-sm">© 2024 Torc Creative Labs.</span>
         </div>
       </footer>
     </div>
